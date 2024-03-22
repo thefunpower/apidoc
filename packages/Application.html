@@ -5,7 +5,7 @@
             <title>Documentation</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
@@ -82,7 +82,7 @@
                 <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/Application.html" class="">Application</a>
+    <a href="packages/Application.html" class="-active">Application</a>
 </h4>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -115,57 +115,55 @@
 </aside>
 
             <div class="phpdocumentor-column -nine phpdocumentor-content">
-                                        <section>
-        <h2>Documentation</h2>
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+    </ul>
 
-        
+    <article class="phpdocumentor-element -package">
+        <h2 class="phpdocumentor-content__title">Application</h2>
+
         
 <h3 id="toc">
     Table of Contents
-    <a href="namespaces/default.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="packages/Application.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
-<h4 id="packages">
-    Packages
-    <a href="namespaces/default.html#packages" class="headerlink"><i class="fas fa-link"></i></a>
 
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></dt>
-            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/Medoo.html"><abbr title="\Medoo">Medoo</abbr></a></dt>
-            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/system.html"><abbr title="\system">system</abbr></a></dt>
-    </dl>
-
-<h4 id="namespaces">
-    Namespaces
-    <a href="namespaces/default.html#namespaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/helper-v3.html"><abbr title="\helper_v3">helper_v3</abbr></a></dt>
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/medoo.html"><abbr title="\Medoo">Medoo</abbr></a></dt>
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/thefunpower.html"><abbr title="\thefunpower">thefunpower</abbr></a></dt>
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/lib.html"><abbr title="\lib">lib</abbr></a></dt>
-    </dl>
 
 
     <h4 id="toc-classes">
         Classes
-        <a href="namespaces/default.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="packages/Application.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/di.html"><abbr title="\di">di</abbr></a></dt><dd>global $di;
 $di = new di();
-$di-&gt;adapter = new adapter();</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/SCSS.html"><abbr title="\SCSS">SCSS</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/license.html"><abbr title="\license">license</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/pg-pager-html.html"><abbr title="\pg_pager_html">pg_pager_html</abbr></a></dt><dd>&lt;code&gt;
-类似淘宝分页</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rpc-php.html"><abbr title="\rpc_php">rpc_php</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Vue.html"><abbr title="\Vue">Vue</abbr></a></dt><dd>用于生成vue2或vue3的JS代码</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Yii-CJavaScriptExpression.html"><abbr title="\Yii_CJavaScriptExpression">Yii_CJavaScriptExpression</abbr></a></dt><dd>CJavaScriptExpression represents a JavaScript expression that does not need escaping.</dd>    </dl>
+$di-&gt;adapter = new adapter();</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Csv.html"><abbr title="\helper_v3\Csv">Csv</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Form.html"><abbr title="\helper_v3\Form">Form</abbr></a></dt><dd>表单token
+$token = helper_v3\Form::create_token();
+在vue form中添加&lt;?= $token[&#039;input&#039;]?&gt;
+提交数据前 this.form.__TOKEN__ = &#039;&quot; . $token[&#039;data&#039;] . &quot;&#039;;
+服务端检测token， helper_v3\Form::check_token();
+判断value值，需要在配置文件中配置 form_token_value 的值
+表单的token名称也可以通过配置 form_token_name 来修改，默认为__TOKEN__</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Ftp.html"><abbr title="\helper_v3\Ftp">Ftp</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-FtpClient.html"><abbr title="\helper_v3\FtpClient">FtpClient</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Image.html"><abbr title="\helper_v3\Image">Image</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Lock.html"><abbr title="\helper_v3\Lock">Lock</abbr></a></dt><dd>https://symfony.com/doc/current/components/lock.html
+global $redis_lock;
+$redis_lock = [
+&#039;host&#039;=&gt;&#039;&#039;,
+&#039;port&#039;=&gt;&#039;&#039;,
+&#039;auth&#039;=&gt;&#039;&#039;,
+];</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Pdf.html"><abbr title="\helper_v3\Pdf">Pdf</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Pusher.html"><abbr title="\helper_v3\Pusher">Pusher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Rpc.html"><abbr title="\helper_v3\Rpc">Rpc</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Sms.html"><abbr title="\helper_v3\Sms">Sms</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/helper-v3-Xls.html"><abbr title="\helper_v3\Xls">Xls</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/SCSS.html"><abbr title="\SCSS">SCSS</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/license.html"><abbr title="\license">license</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/pg-pager-html.html"><abbr title="\pg_pager_html">pg_pager_html</abbr></a></dt><dd>&lt;code&gt;
+类似淘宝分页</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rpc-php.html"><abbr title="\rpc_php">rpc_php</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/thefunpower-sonyflake-id.html"><abbr title="\thefunpower\sonyflake\id">id</abbr></a></dt><dd>生成唯一ID</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Aes.html"><abbr title="\lib\Aes">Aes</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Mail.html"><abbr title="\lib\Mail">Mail</abbr></a></dt><dd>发送邮件
+composer require symfony/mailer
+https://symfony.com/components/Mailer</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Mime.html"><abbr title="\lib\Mime">Mime</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Rsa.html"><abbr title="\lib\Rsa">Rsa</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Session.html"><abbr title="\lib\Session">Session</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Str.html"><abbr title="\lib\Str">Str</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Time.html"><abbr title="\lib\Time">Time</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/lib-Validate.html"><abbr title="\lib\Validate">Validate</abbr></a></dt><dd>$lang = &#039;zh-cn&#039;;
+lib\Validate::lang($lang);
+lib\Validate::langDir(__DIR__.&#039;/validator_lang&#039;);</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Vue.html"><abbr title="\Vue">Vue</abbr></a></dt><dd>用于生成vue2或vue3的JS代码</dd>    </dl>
 
 
 
 <h4 id="toc-constants">
     Constants
-    <a href="namespaces/default.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="packages/Application.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
@@ -188,7 +186,7 @@ $di-&gt;adapter = new adapter();</dd>            <dt class="phpdocumentor-table-
 
 <h4 id="toc-functions">
     Functions
-    <a href="namespaces/default.html#toc-functions" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="packages/Application.html#toc-functions" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
@@ -1894,7 +1892,7 @@ get_all_or_one(&quot;novel_book&quot;,$where,&#039;get_novel_book_row&#039;);</d
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
-            <a href="namespaces/default.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="packages/Application.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
@@ -1958,7 +1956,7 @@ get_all_or_one(&quot;novel_book&quot;,$where,&#039;get_novel_book_row&#039;);</d
             <section class="phpdocumentor-functions">
         <h3 class="phpdocumentor-elements__header" id="functions">
             Functions
-            <a href="namespaces/default.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="packages/Application.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article class="phpdocumentor-element -function - ">
@@ -12035,7 +12033,374 @@ Default is false. This parameter is available since 1.1.11.</p>
 </article>
             </section>
 
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                                        <li><a href="packages/Application.html#toc-classes">Classes</a></li>
+                                                                                                        <li><a href="packages/Application.html#toc-constants">Constants</a></li>
+                                                                <li><a href="packages/Application.html#toc-functions">Functions</a></li>
+                                    </ul>
+            </li>
+
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#constant_DS">DS</a></li>
+                                                    <li><a href="namespaces/default.html#constant_HELPER_DIR">HELPER_DIR</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#function__db_get_when_array">_db_get_when_array()</a></li>
+                                                    <li><a href="namespaces/default.html#function__db_group_con">_db_group_con()</a></li>
+                                                    <li><a href="namespaces/default.html#function__loop_del_tree">_loop_del_tree()</a></li>
+                                                    <li><a href="namespaces/default.html#function__loop_tree_deep_inner">_loop_tree_deep_inner()</a></li>
+                                                    <li><a href="namespaces/default.html#function__pg_get">_pg_get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_active_db">active_db()</a></li>
+                                                    <li><a href="namespaces/default.html#function_active_db_default">active_db_default()</a></li>
+                                                    <li><a href="namespaces/default.html#function_add_action">add_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_add_action">add_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_aes_decode">aes_decode()</a></li>
+                                                    <li><a href="namespaces/default.html#function_aes_encode">aes_encode()</a></li>
+                                                    <li><a href="namespaces/default.html#function_allow_cross_origin">allow_cross_origin()</a></li>
+                                                    <li><a href="namespaces/default.html#function_api_data_insert">api_data_insert()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array2xml">array2xml()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array_order_by">array_order_by()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array_to_el_select">array_to_el_select()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array_to_object">array_to_object()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array_to_pager">array_to_pager()</a></li>
+                                                    <li><a href="namespaces/default.html#function_array_to_tree">array_to_tree()</a></li>
+                                                    <li><a href="namespaces/default.html#function_auto_jump">auto_jump()</a></li>
+                                                    <li><a href="namespaces/default.html#function_call_retry">call_retry()</a></li>
+                                                    <li><a href="namespaces/default.html#function_compare_date">compare_date()</a></li>
+                                                    <li><a href="namespaces/default.html#function_cookie">cookie()</a></li>
+                                                    <li><a href="namespaces/default.html#function_cookie_delete">cookie_delete()</a></li>
+                                                    <li><a href="namespaces/default.html#function_copy_base64_data">copy_base64_data()</a></li>
+                                                    <li><a href="namespaces/default.html#function_create_dir_if_not_exists">create_dir_if_not_exists()</a></li>
+                                                    <li><a href="namespaces/default.html#function_create_node_ws_server">create_node_ws_server()</a></li>
+                                                    <li><a href="namespaces/default.html#function_csv_reader">csv_reader()</a></li>
+                                                    <li><a href="namespaces/default.html#function_csv_writer">csv_writer()</a></li>
+                                                    <li><a href="namespaces/default.html#function_curl_aliyun">curl_aliyun()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_action">db_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_allow">db_allow()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_allow_set">db_allow_set()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_del">db_del()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get">db_get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_cache">db_get_cache()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_count">db_get_count()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_group">db_get_group()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_one">db_get_one()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_pager">db_get_pager()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_get_sum">db_get_sum()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_insert">db_insert()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_pager">db_pager()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_reset_data_by_filed_type">db_reset_data_by_filed_type()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_set_field_type">db_set_field_type()</a></li>
+                                                    <li><a href="namespaces/default.html#function_db_update">db_update()</a></li>
+                                                    <li><a href="namespaces/default.html#function_del_lock">del_lock()</a></li>
+                                                    <li><a href="namespaces/default.html#function_do_action">do_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_do_action">do_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_download_file">download_file()</a></li>
+                                                    <li><a href="namespaces/default.html#function_download_file_safe">download_file_safe()</a></li>
+                                                    <li><a href="namespaces/default.html#function_download_remote_file">download_remote_file()</a></li>
+                                                    <li><a href="namespaces/default.html#function_echarts">echarts()</a></li>
+                                                    <li><a href="namespaces/default.html#function_echarts_reload">echarts_reload()</a></li>
+                                                    <li><a href="namespaces/default.html#function_echats">echats()</a></li>
+                                                    <li><a href="namespaces/default.html#function_echats_reload">echats_reload()</a></li>
+                                                    <li><a href="namespaces/default.html#function_el_cascader">el_cascader()</a></li>
+                                                    <li><a href="namespaces/default.html#function_el_table_tree">el_table_tree()</a></li>
+                                                    <li><a href="namespaces/default.html#function_error_data">error_data()</a></li>
+                                                    <li><a href="namespaces/default.html#function_float_noup">float_noup()</a></li>
+                                                    <li><a href="namespaces/default.html#function_float_up">float_up()</a></li>
+                                                    <li><a href="namespaces/default.html#function_g">g()</a></li>
+                                                    <li><a href="namespaces/default.html#function_gbk_substr">gbk_substr()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get">get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_all_or_one">get_all_or_one()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_api_data">get_api_data()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_barcode">get_barcode()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_config">get_config()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_data_allow">get_data_allow()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_date_china">get_date_china()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_dates">get_dates()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_db_cache_key">get_db_cache_key()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_db_cache_where">get_db_cache_where()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_deep_dir">get_deep_dir()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_dir">get_dir()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_distance">get_distance()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_env">get_env()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_ext">get_ext()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_ext_by_url">get_ext_by_url()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_field_allow">get_field_allow()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_gbk_len">get_gbk_len()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_http_full_url">get_http_full_url()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_id_by_auto_insert">get_id_by_auto_insert()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_index_array_valule">get_index_array_valule()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_input">get_input()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_ip">get_ip()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_lines">get_lines()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_lock">get_lock()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_loop_tree_ids">get_loop_tree_ids()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_mime">get_mime()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_name">get_name()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_path_info">get_path_info()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_pg_active_name">get_pg_active_name()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_reffer">get_reffer()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_remote_file">get_remote_file()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_req_post">get_req_post()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_request_host">get_request_host()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_request_top">get_request_top()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_root_domain">get_root_domain()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_server_headers">get_server_headers()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_str_ord">get_str_ord()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_sub_domain">get_sub_domain()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_template">get_template()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_text_c">get_text_c()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_text_lr">get_text_lr()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_url_remove_http">get_url_remove_http()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_ws_js">get_ws_js()</a></li>
+                                                    <li><a href="namespaces/default.html#function_get_xss_clean_ins">get_xss_clean_ins()</a></li>
+                                                    <li><a href="namespaces/default.html#function_global_trim">global_trim()</a></li>
+                                                    <li><a href="namespaces/default.html#function_global_trim_inner">global_trim_inner()</a></li>
+                                                    <li><a href="namespaces/default.html#function_guzzle_http">guzzle_http()</a></li>
+                                                    <li><a href="namespaces/default.html#function_guzzle_http_fake_option">guzzle_http_fake_option()</a></li>
+                                                    <li><a href="namespaces/default.html#function_gz_decode">gz_decode()</a></li>
+                                                    <li><a href="namespaces/default.html#function_gz_encode">gz_encode()</a></li>
+                                                    <li><a href="namespaces/default.html#function_html_to_pdf">html_to_pdf()</a></li>
+                                                    <li><a href="namespaces/default.html#function_import">import()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_ajax">is_ajax()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_cli">is_cli()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_json">is_json()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_json">is_json()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_json_request">is_json_request()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_local">is_local()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_post">is_post()</a></li>
+                                                    <li><a href="namespaces/default.html#function_is_ssl">is_ssl()</a></li>
+                                                    <li><a href="namespaces/default.html#function_json">json()</a></li>
+                                                    <li><a href="namespaces/default.html#function_json_error">json_error()</a></li>
+                                                    <li><a href="namespaces/default.html#function_json_replace">json_replace()</a></li>
+                                                    <li><a href="namespaces/default.html#function_json_success">json_success()</a></li>
+                                                    <li><a href="namespaces/default.html#function_jump">jump()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_create">license_create()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_data">license_data()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_data_parse">license_data_parse()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_html">license_html()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_is_expire">license_is_expire()</a></li>
+                                                    <li><a href="namespaces/default.html#function_license_near_expire">license_near_expire()</a></li>
+                                                    <li><a href="namespaces/default.html#function_load_xls">load_xls()</a></li>
+                                                    <li><a href="namespaces/default.html#function_lock_call">lock_call()</a></li>
+                                                    <li><a href="namespaces/default.html#function_lock_end">lock_end()</a></li>
+                                                    <li><a href="namespaces/default.html#function_lock_start">lock_start()</a></li>
+                                                    <li><a href="namespaces/default.html#function_loop_del">loop_del()</a></li>
+                                                    <li><a href="namespaces/default.html#function_loop_tree">loop_tree()</a></li>
+                                                    <li><a href="namespaces/default.html#function_make_rand_code">make_rand_code()</a></li>
+                                                    <li><a href="namespaces/default.html#function_medoo_pg">medoo_pg()</a></li>
+                                                    <li><a href="namespaces/default.html#function_mongo_action">mongo_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_new_pg">new_pg()</a></li>
+                                                    <li><a href="namespaces/default.html#function_now">now()</a></li>
+                                                    <li><a href="namespaces/default.html#function_object_to_array">object_to_array()</a></li>
+                                                    <li><a href="namespaces/default.html#function_online_view_office">online_view_office()</a></li>
+                                                    <li><a href="namespaces/default.html#function_output_js_css">output_js_css()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg">pg()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_action">pg_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_active">pg_active()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_active_default">pg_active_default()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_active_main">pg_active_main()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_active_read">pg_active_read()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_add_error">pg_add_error()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_allow">pg_allow()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_between_date">pg_between_date()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_between_month">pg_between_month()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_can_run_action">pg_can_run_action()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_can_run_update">pg_can_run_update()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_del">pg_del()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_delete">pg_delete()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_field_is_json">pg_field_is_json()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_field_json">pg_field_json()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_fields">pg_fields()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_for_update">pg_for_update()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get">pg_get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_avg">pg_get_avg()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_count">pg_get_count()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_error">pg_get_error()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_has">pg_get_has()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_max">pg_get_max()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_min">pg_get_min()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_one">pg_get_one()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_rand">pg_get_rand()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_get_sum">pg_get_sum()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_insert">pg_insert()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_pager">pg_pager()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_pager_count">pg_pager_count()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_pager_html">pg_pager_html()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_query">pg_query()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_raw">pg_raw()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_row_json_to_array">pg_row_json_to_array()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_select">pg_select()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_tables">pg_tables()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_tables_markdown">pg_tables_markdown()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pg_update">pg_update()</a></li>
+                                                    <li><a href="namespaces/default.html#function_php_to_js">php_to_js()</a></li>
+                                                    <li><a href="namespaces/default.html#function_pr">pr()</a></li>
+                                                    <li><a href="namespaces/default.html#function_predis">predis()</a></li>
+                                                    <li><a href="namespaces/default.html#function_predis_add_geo">predis_add_geo()</a></li>
+                                                    <li><a href="namespaces/default.html#function_predis_delete_geo">predis_delete_geo()</a></li>
+                                                    <li><a href="namespaces/default.html#function_predis_geo_pos">predis_geo_pos()</a></li>
+                                                    <li><a href="namespaces/default.html#function_predis_get_pager">predis_get_pager()</a></li>
+                                                    <li><a href="namespaces/default.html#function_price_format">price_format()</a></li>
+                                                    <li><a href="namespaces/default.html#function_printfs">printfs()</a></li>
+                                                    <li><a href="namespaces/default.html#function_push_task">push_task()</a></li>
+                                                    <li><a href="namespaces/default.html#function_redis_pub">redis_pub()</a></li>
+                                                    <li><a href="namespaces/default.html#function_redis_sub">redis_sub()</a></li>
+                                                    <li><a href="namespaces/default.html#function_remove_php_notes">remove_php_notes()</a></li>
+                                                    <li><a href="namespaces/default.html#function_router_pathinfo">router_pathinfo()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rpc_client">rpc_client()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rpc_server">rpc_server()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rpc_token">rpc_token()</a></li>
+                                                    <li><a href="namespaces/default.html#function_scss">scss()</a></li>
+                                                    <li><a href="namespaces/default.html#function_send_pusher">send_pusher()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_config">set_config()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_db_cache">set_db_cache()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_env">set_env()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_field_allow">set_field_allow()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_lock">set_lock()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_scss_path">set_scss_path()</a></li>
+                                                    <li><a href="namespaces/default.html#function_set_url_use_cdn">set_url_use_cdn()</a></li>
+                                                    <li><a href="namespaces/default.html#function_sign_by_secret">sign_by_secret()</a></li>
+                                                    <li><a href="namespaces/default.html#function_string_to_array">string_to_array()</a></li>
+                                                    <li><a href="namespaces/default.html#function_success_data">success_data()</a></li>
+                                                    <li><a href="namespaces/default.html#function_text_add_br">text_add_br()</a></li>
+                                                    <li><a href="namespaces/default.html#function_think_check_sign">think_check_sign()</a></li>
+                                                    <li><a href="namespaces/default.html#function_think_create_sign">think_create_sign()</a></li>
+                                                    <li><a href="namespaces/default.html#function_think_validate">think_validate()</a></li>
+                                                    <li><a href="namespaces/default.html#function_timeago">timeago()</a></li>
+                                                    <li><a href="namespaces/default.html#function_to_utf8">to_utf8()</a></li>
+                                                    <li><a href="namespaces/default.html#function_update_make_rand_code">update_make_rand_code()</a></li>
+                                                    <li><a href="namespaces/default.html#function_validate">validate()</a></li>
+                                                    <li><a href="namespaces/default.html#function_vue_get_jidu">vue_get_jidu()</a></li>
+                                                    <li><a href="namespaces/default.html#function_vue_get_jidu_array">vue_get_jidu_array()</a></li>
+                                                    <li><a href="namespaces/default.html#function_vue_get_last_day">vue_get_last_day()</a></li>
+                                                    <li><a href="namespaces/default.html#function_vue_loading">vue_loading()</a></li>
+                                                    <li><a href="namespaces/default.html#function_vue_message">vue_message()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xcookie">xcookie()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xcookie_delete">xcookie_delete()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xis_ssl">xis_ssl()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xml2array">xml2array()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xss_clean">xss_clean()</a></li>
+                                                    <li><a href="namespaces/default.html#function_xss_clean_str">xss_clean_str()</a></li>
+                                                    <li><a href="namespaces/default.html#function_yaml">yaml()</a></li>
+                                                    <li><a href="namespaces/default.html#function_yaml_dump">yaml_dump()</a></li>
+                                                    <li><a href="namespaces/default.html#function_yaml_load">yaml_load()</a></li>
+                                                    <li><a href="namespaces/default.html#function_yii_quote">yii_quote()</a></li>
+                                                    <li><a href="namespaces/default.html#function_zip_create">zip_create()</a></li>
+                                                    <li><a href="namespaces/default.html#function_zip_extract">zip_extract()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
     </section>
+
+                </section>
                             </div>
             <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -12049,7 +12414,7 @@ Default is false. This parameter is available since 1.1.11.</p>
     </section>
 </section>
         </div>
-        <a href="index.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="packages/Application.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
